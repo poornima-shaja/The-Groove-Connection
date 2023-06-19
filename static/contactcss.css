@@ -1,0 +1,91 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+}
+
+body{
+    background-image: url("https://free4kwallpapers.com/uploads/originals/2015/08/11/black-and-white-wallpaper-music.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.contact-section{
+    background-size: auto;
+    padding: 40px 0;
+}
+
+.contact-section h1{
+    text-align: center;
+    color: deeppink;
+}
+
+.border{
+    width: 100px;
+    height: 10px;
+    background: #34495e;
+    margin: 40px auto;
+}
+
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+
+}
+
+.contact-form-text{
+    display: block;
+    color: deeppink;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: deeppink;
+    padding: 20px 40px;
+    outline:none;
+    color: #fff;
+    transition: 0.5s;
+    background-color: #2e2e2e;
+    opacity: 0.8;
+    
+    
+  
+    
+}
+
+.contact-form-text:focus{
+    box-shadow: 0 0 10px 4px deeppink;
+
+}
+
+textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+}
+
+.contact-form-btn{
+    float: right;
+    border: 0;
+    background: palevioletred;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact-form-btn:hover{
+    background: deeppink;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+  
+

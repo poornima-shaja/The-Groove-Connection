@@ -1,0 +1,57 @@
+{% extends 'layout.html' %}
+{%block body%}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>About Me</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='aboutme.css')}}">
+  </head>
+  <body>
+    <div class="maincontent">
+      <div id="maintitle">The Groove Connection
+        <div class="profilepic">
+          <img src="https://i.pinimg.com/originals/ad/86/f4/ad86f4da92f2b73c87992f46a15968b0.jpg" height="250px" width='250'/>
+        </div>
+      </div>
+      <div id="subtitle">Detect emotion and play songs</div>
+        <p>
+            The application is designed for the user who want to listen song according to their facial expression.
+            The user just need to provide some basic detail like favourite singer,language and give the current facial expression.<span id="dots">......</span><span id="more">
+            The model will detect your emotion based on your facial expression.
+             Now this data will directly redirected to the youtube search query,from the provided data the songs will be generated.
+             You can listen to your current emotion songs..</span></p>
+             <button onclick="myFunction()" id="myBtn">Read more</button>
+        </p>
+      </span></p>
+      
+      
+      <div class="social">
+        <table>
+          <td><a href="https://www.facebook.com" target="_blank">Facebook</a></td>
+          <td><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></td>
+          <td><a href="https://instagram.com/" target="_blank">Instagram</a></td>
+          
+        </table>
+      </div>
+    </div>
+  </body>
+  <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
+</html>
+{%endblock%}

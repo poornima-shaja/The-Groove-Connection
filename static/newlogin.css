@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display:center;
+    margin: 25px;
+}    
+form {border: 0px solid #f1f1f1;
+  justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+    display: grid;
+    
+  }
+
+input[type=text], input[type=password],input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 40px;
+  background-color: #D3D3D3;
+  justify-content: center;
+  height: 700px;
+  width: 500px;
+
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.imgcontainer img{
+    height:150px;
+    width:150px;
+    display:center;
+    justify-content: center;
+}
+
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  justify-content: center;
+}
+
+.imgcontainer h1{
+    text-align:center;
+    top: 0;
+}
+
+.container {
+  padding: 56px;
+  display: center;
+  
+}
+
+.container input{
+    width: 450px;
+}
+
+.child{
+    width:700px;
+    display:center;
+    text-align:center;
+    justify-content:center;
+    height: 300px;
+}
+span .pass {
+  float: right;
+  padding-top: 16px;
+  display: block;
+  
+}
+
+
+
+.pass a{
+    display: inline-block;
+    text-align: left;
+}
+.container .pass {
+    background-color: #f1f1f1;
+    text-align: center;
+    display:center;
+}   
+

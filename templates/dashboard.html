@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+   
+    h1{
+      color:black;
+      text-align:center;
+    }
+
+    h3{
+      color:black;
+      text-align:center;
+    }
+
+ 
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+html{   
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+ 
+body{
+   
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+}
+ 
+ 
+.full-page{
+    height: 100%;
+    width: 100%;
+    background-position: center ;
+    background-size: cover;
+    position: absolute;
+}
+ 
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+ 
+nav{
+    flex: 1;
+    text-align: right;
+}
+ 
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+ 
+img{
+    padding: 0%;
+    margin: 0%;
+}
+ 
+nav ul li{
+    display: inline-block;
+    margin-right: 70px;
+}
+ 
+nav ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+ 
+nav ul li button{
+    font-size: 25px;
+    color: black;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold;
+ 
+}
+ 
+nav ul li button:hover{
+    color: rgb(190, 10, 106);
+ 
+}
+ 
+nav ul li a:hover{
+    color: rgb(190, 10, 106);
+}
+ 
+a{
+    text-decoration: none;
+    color: deeppink;
+    font-size: 30px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="full-page">
+        
+    <div class="navbar">
+       
+        
+            <nav>
+            
+                <ul id="menuitems">
+                    <li><a href="/home">HOME</a></li>
+                    <li><a href="/about">ABOUT ME</a></li>
+                    <li><a href="/contact">CONTACT ME</a></li>
+                    <li><a href="/dashboard">ADMIN</a></li>
+                    <li><a href="/login">LOGIN</a></li>
+                    <li><a href="/logout">LOGOUT</a></li>
+                </ul>
+            </nav>
+        
+        </div>
+          
+
+
+
+
+  <h1>Welcome back admin</h1>
+
+  <h3>CONTACTS</h3>
+
+
+      <table class='table'>
+        <thead>
+          
+        <tr>
+          <th>sno</th>
+          <th>name</th>
+          <th>phone_no</th>
+          <th>msg</th>
+          <th>date</th>
+          <th>email</th>
+        </tr>
+      
+      </thead>
+      <tbody>
+      {% for contact in contacts %}
+        <tr>
+          <td>{{contact.sno}}</td>
+          <td>{{contact.name}}</td>
+          <td>{{contact.phone_num}}</td>
+          <td>{{contact.msg}}</td>
+          <td>{{contact.date}}</td>
+          <td>{{contact.email}}</td>
+        </tr>
+       {% endfor %}
+
+      </tbody>
+      </table>
+   
+  <hr>
+
+  <h3> LOGIN </h3>
+ 
+  <table class='table'>
+    <thead>
+      
+    <tr>
+      <th>id</th>
+      <th>username</th>
+      <th>email</th>
+      <th>date</th>
+    </tr>
+  
+  </thead>
+  <tbody>
+  {% for account in accounts %}
+    <tr>
+      <td>{{account.id}}</td>
+      <td>{{account.username}}</td>
+      <td>{{account.email}}</td>
+      <td>{{account.date}}</td>
+    </tr>
+   {% endfor %}
+  </tbody>
+  </table>
+  <hr>
+ 
+  <h3>DETAILS</h3>
+
+
+      <table class='table'>
+        <thead>
+          
+        <tr>
+          <th>sno</th>
+          <th>language</th>
+          <th>singer</th>
+          <th>date</th>
+          
+        </tr>
+      
+      </thead>
+      <tbody>
+      {% for detail in details %}
+        <tr>
+          <td>{{detail.sno}}</td>
+          <td>{{detail.language}}</td>
+          <td>{{detail.singer}}</td>
+          <td>{{detail.date}}</td>
+       
+        </tr>
+       {% endfor %}
+      </tbody>
+      </table>
+
+  
+</div>
+
+</body>
+</html>

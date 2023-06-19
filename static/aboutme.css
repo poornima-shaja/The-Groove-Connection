@@ -1,0 +1,86 @@
+body{
+    background-image: url("https://free4kwallpapers.com/uploads/originals/2015/08/11/black-and-white-wallpaper-music.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+  
+.maincontent{
+    background-color: #464646;
+    opacity: 0.8;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: 25%;
+    position: absolute;
+}
+  
+#maintitle{
+    font-family: Bebas Neue;
+    color: #FFFFFF;
+    font-size: 5em;
+    font-weight: bold;
+    position: relative;
+    margin: 20px;
+}
+  
+#subpagetitle{
+    font-family: Bebas Neue;
+    color: #FFFFFF;
+    font-size: 3em;
+    position: relative;
+    margin: 20px;
+}
+  
+.profilepic{
+    position: relative;
+    float: right;
+    size: 250px;
+}
+  
+#subtitle{
+    font-family: Lato;
+    color: black;
+    font-size: 2em;
+    position: relative;
+    margin: 20px;
+}
+  
+p{
+    font-family: Ubuntu;
+    font-size: 1em;
+    color: #ffffff;
+    margin: 20px;
+}
+  
+a{
+    font-family: Ubuntu;
+    font-size: 1em;
+    color: #ffffff;
+    text-decoration: none;
+}
+  
+
+  
+.social{
+    margin: 20px
+}
+  
+td{
+    padding-right: 20px;
+    transition: all .2s ease-in-out;
+    transform: scale(1.2);
+    color: deeppink;
+    background-color: #464646;
+}
+  
+#bgpic{
+    width: 50%;
+    float: right;
+    position: relative;
+    margin-top: 5px;
+}
+  
+#montserrat{
+    margin: 5px;
+}

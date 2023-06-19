@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+{%block body%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Groove Connection</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='content.css')}}">
+</head>
+<body>
+  
+  <div class="maincontent">
+    
+    <div class="titles">
+      
+      <h2>The Groove Connection!!!<h2>
+      <p>Click here to check your current mood & seek your engaging song!!</p>
+    </div>
+      <div id="outer">
+        <div class="button_slide slide_left">
+          <a href="/register" onclick="myFunction()">START APP</a>
+          
+        </div>
+      </div> 
+  </div>
+</body>
+<script>
+  function myFunction() {
+    alert("You need to Register first!!");
+  }
+  </script>
+</html>
+{%endblock%}

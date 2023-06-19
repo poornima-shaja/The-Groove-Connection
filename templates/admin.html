@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin login</title>
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='newlogin.css')}}">
+</head>
+<body>
+
+<form action="/dashboard" method="post">
+  
+ 
+    
+
+  <div class="container">
+
+    <div class='child'>
+      <h1>Admin login</h1>
+    <label for="uname"><b>Email</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required></br>
+
+    <label for="pass"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="passw" required></br>
+        
+    <button type="submit">Submit</button></br></br>
+ 
+  </div>
+  </div>
+</form>
+</body>
+</html>
